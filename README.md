@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/What-SAP/webinar-github-final/actions/workflows/node.js.yml/badge.svg)](https://github.com/What-SAP/webinar-github-final/actions/workflows/node.js.yml)
+
 # GitHub example project
 
 Installation:
