@@ -10,11 +10,11 @@ describe("DirectoryReader", function () {
 		it("should return correct test directories", async function () {
 			const reader = new DirectoryReader();
 
-			const directories = await reader.getDataDirectories(path.join(__dirname, DATA_DIR));
+			const files = await reader.getDataFiles(path.join(__dirname, DATA_DIR));
 
-			assert.deepStrictEqual(directories, [
-				"Foo Bar (2020)",
-				"John Doe (2021)"
+			assert.deepStrictEqual(files, [
+				"Foo Bar (2020).json",
+				"John Doe (2021).json"
 			]);
 		});
 	});

@@ -5,7 +5,7 @@ const DirectoryReader = require("./DirectoryReader");
 const reader = new DirectoryReader();
 
 (async () => {
-	const directories = await reader.getDataDirectories(path.join(__dirname, DATA_DIR));
+	const directories = await reader.getDataFiles(path.join(__dirname, DATA_DIR));
 
 	console.log(directories.join("\n"));
 })();
